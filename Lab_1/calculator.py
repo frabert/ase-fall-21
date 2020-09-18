@@ -11,6 +11,8 @@ def sum(m, n):
         
 
 def divide(m, n):
+    if n == 0:
+        raise ZeroDivisionError
     i = 0
     isNegative = m>0 and n<0 or m<0 and n>0
     m = abs(m)
